@@ -295,6 +295,26 @@
       color: white;
     }
 
+    .map-frame-wrapper {
+       display: flex;
+       flex-direction: column;
+       max-width: 90vw;
+       padding: 0rem;
+       margin: 1.5rem auto;
+       box-sizing: border-box;
+       width: 100%;
+     }
+
+     .map-frame-wrapper iframe {
+       width: 100%;
+       height: 450px;
+       border: 3px solid #333;
+       border-radius: 12px;
+       box-shadow: 5px 5px 5px rgba(0,0,0,0.35);
+       display: block;
+       box-sizing: border-box;
+     }
+
   </style>
 </head>
 <body>
@@ -384,6 +404,22 @@ const originalPanels = [
           </p>
         </div>
       </div>
+      <div class="map-frame-wrapper">
+       <iframe
+         src="https://www.google.com/maps/embed?pb=!4v1747251742775!6m8!1m7!1sgjgdN8AXZJR0wtrRf1nsYw!2m2!1d34.28167777690553!2d-118.402321515699!3f35.18234041287563!4f11.317536249740542!5f0.4000000000000002"
+         allowfullscreen=""
+         loading="lazy"
+         referrerpolicy="no-referrer-when-downgrade">
+       </iframe>
+      </div>
+      <div class="map-frame-wrapper">
+       <iframe
+         src="https://www.google.com/maps/embed?pb=!4v1747254535751!6m8!1m7!1s0gT2Uf444-uuuLWyaXj62g!2m2!1d35.36855083730699!2d-119.0082118757713!3f20.149099629408177!4f-11.7176118903663!5f0.4000000000000002"
+         allowfullscreen=""
+         loading="lazy"
+         referrerpolicy="no-referrer-when-downgrade">
+       </iframe>
+     </div>
     `
   },
   {
